@@ -1,0 +1,112 @@
+.products {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+}
+
+.product {
+  &-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    background-color: #f9f9f9; // Fondo suave
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease; // Animación al pasar sobre la imagen
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  &-info {
+    margin: 2rem 0;
+  }
+
+  &-not-found {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.view-details {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #a83eb1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #5100b3;
+  }
+}
+
+.actions-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.purchase-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #218838;
+  }
+}
+
+.back-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #641770;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #5a6268;
+  }
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7a2e94;
+  margin-bottom: 1rem;
+}
