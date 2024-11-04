@@ -1,5 +1,5 @@
 @use 'variables' as *;
-@use 'components/navbar' as *;
+@use '../styles/components/Navbar.scss' as *;
 @use 'components/products';
 @use 'components/home';
 @use 'components/not-found';
