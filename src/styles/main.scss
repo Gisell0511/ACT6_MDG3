@@ -1,6 +1,6 @@
 @use 'variables' as *;
-@use '../styles/components/Navbar.scss' as *;
-@use 'components/products';
+@use '../styles/components/Navbar.scss' ;
+@use '../styles/components/Products.scss';
 @use 'components/home';
 @use 'components/not-found';
 @use 'sass:color';
